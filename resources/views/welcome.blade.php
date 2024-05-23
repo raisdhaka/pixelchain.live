@@ -157,7 +157,7 @@
               <div class="col-sm-4  pt-4 mt-1">
                 <div class="row">
                   <div class="col-sm-12">
-                    <button class="gsi-material-button">
+                    <a href="{{ route('google.redirect') }}" class="gsi-material-button">
                       <div class="gsi-material-button-state"></div>
                       <div class="gsi-material-button-content-wrapper">
                         <div class="gsi-material-button-icon">
@@ -181,7 +181,7 @@
                         <span class="gsi-material-button-contents">Sign in with Google</span>
                         <span style="display: none;">Sign in with Google</span>
                       </div>
-                    </button>
+                    </a>
 
                   </div>
 
