@@ -9,12 +9,9 @@
         <title>PixelChain</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="{{asset('styles.css')}}" />
-        <script src="{{asset('html2canvas.js')}}" defer></script>
-        <script src="{{asset('script.js')}}" defer></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -89,23 +86,23 @@
                   <h1 class="d-flex justify-content-between "><span>Daily Feed</span> <img src="assets/refresh.svg" alt="refresh" width="20"></h1>
                   <div class="row mb-3">
                     <div class="col-sm-2 pe-0">
-                      <img src="assets/profile1.svg" alt="" class="img-fluid" width="30">
+                      <img src="{{asset('assets/profile1.svg')}}" alt="" class="img-fluid" width="30">
                     </div>
                     <div class="col-sm-9 ps-0">
                       <p style="text-align: left;">Deadloper   23:16 19-05-2024</p>
                       <div class="feedContainer p-3">
-                        <img src="assets/feed1.svg" alt="">
+                        <img src="{{asset('assets/feed1.svg')}}" alt="">
                       </div>
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-2 pe-0">
-                      <img src="assets/profile2.svg" alt="" class="img-fluid" width="30">
+                      <img src="{{asset('assets/profile2.svg')}}" alt="" class="img-fluid" width="30">
                     </div>
                     <div class="col-sm-9 ps-0">
                       <p style="text-align: left;">Milinda   23:16 19-05-2024</p>
                       <div class="feedContainer p-3">
-                        <img src="assets/feed2.svg" alt="">
+                        <img src="{{asset('assets/feed2.svg')}}" alt="">
                       </div>
                     </div>
                   </div>
@@ -195,15 +192,15 @@
                 <div class="card" id="profile">
                   <div class="card-body">
                     <div class="d-flex flex-column align-items-center text-center"> <img
-                        src="assets/profileBig.svg" alt="Admin"
+                        src="{{asset('assets/profileBig.svg')}}" alt="Admin"
                         class="rounded-circle p-1 bg-primary" style="max-width: 95%; width: 300px;">
                       <div class="mt-3">
                         <h2>Developer</h2>
                         <p class="text-secondary mb-1">She/He</p>
                         <div class="d-flex justify-content-center">
-                          <img src="assets/instragram.svg" alt="in" width="60" style="margin-top: -5px;">
-                          <img src="assets/twitter.svg" alt="tw" width="60">
-                          <img src="assets/facebook.svg" alt="fb" width="57" style="margin-top: -6px;">
+                          <img src="{{asset('assets/instragram.svg')}}" alt="in" width="60" style="margin-top: -5px;">
+                          <img src="{{asset('assets/twitter.svg')}}" alt="tw" width="60">
+                          <img src="{{asset('assets/facebook.svg')}}" alt="fb" width="57" style="margin-top: -6px;">
                         </div>
                         <div class="d-flex justify-content-between">
 
@@ -229,5 +226,11 @@
               </div>
             </div>
           </div>
+          <script src="{{asset('html2canvas.js')}}" ></script>
+          <script src="{{asset('script.js')}}" ></script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
     </body>
 </html>
